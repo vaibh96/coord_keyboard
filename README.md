@@ -1,2 +1,2 @@
 # coord_keyboard
-ROS package to take coordinate inputs from the keyboard.
+The coord_keyboard package uses the package 'keyboard' to take input from the keyboard and publishes them over a topic named 'coord' in the form of a Quaternion. The input has to be in the form of integers separated by a return key. The two integers are x and y coordinates which are taken up by another node to process and send the required command to the arduino. The main aim is to send the goal position to the bot, with respect to the current position, where it navigates to autonomously.
